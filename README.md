@@ -27,3 +27,20 @@ Lab 4 is a bill calculator for a party. First, the program prompts the user for 
 Afterwards, the tax on the room is computed as the ``room cost * 0.065`` for 6.5% state tax. This number is then added back to the room cost to get the room total. The meal costs are straightforward: ``number of meals * meal cost``. The meal tax is the sum of the meal costs multiplied by the gratuity of 18%. The total is, then, the sum of all of these numbers.
 
 At this point, the program simply prints the results in a tabular format for a more attractive looking bill (messy bills don't earn large tips).
+
+## Lab 5
+Lab 5 contains two sections. The first is a caffeine calculator, and the second is a basic checking account program. After the rudimentary menu selection, users can choose one of these programs to run (1 - Caffeine, 2 - Checking Acct).
+
+Starting with the caffeine calculator, the program takes in a number of 8oz cups of coffee. Then it loops through until the caffeine left drops below 65.00mg, being processed at 13% an hour. The amount of caffeine per hour is then printed out to the screen, in mg.
+
+Problem 2 is a simple checking account program. There are 5 options: Withdraw, Deposit, Show Balances, Transfer, or Exit. After taking in initial balances for the checking and savings account, the user can select one of the options.
+
+- Withdraw: Take money out of the checking account.
+- Deposit: Put money into the checking account.
+- Show Balances: Prints the balances of the checking and savings accounts.
+- Transfer: Transfer money from checking to savings or vice versa.
+- Exit: Ends the program.
+
+There is also simple _overdraft_ protection, where if there is't enough money in the checking account, money is taken from the savings account to cover the cost.
+
+The final method is ``Error(string issue)``, which prints the issue. This is used throughout the Lab to catch potential errors, such as users entering negative numbers or invalid input.
